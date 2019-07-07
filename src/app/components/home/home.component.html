@@ -1,0 +1,23 @@
+
+<div>
+    <h2>List of Users</h2>
+    <ul *ngIf = "users">
+
+        <li *ngFor = "let user of users">
+            
+            
+            <div class="responsive">
+                    <div class="gallery">
+                     
+                        <img [src] = "user.avatar_url" width="600" height="400">
+                  
+                      <div class="desc">{{user.login}}</div>
+                    </div>
+            </div>
+
+
+        </li>
+    </ul>
+
+
+</div>

@@ -1,0 +1,10 @@
+<header>
+<nav>
+    <ul class="topnav">
+        <li><a [class.active]="isHomeActive"  (click)="homeClicked()" routerLink="/">Home</a></li>
+        <!-- <li><a routerLink="/">News</a></li> -->
+        <li><a [class.active]="isContactActive" (click)="contactClicked()" routerLink="/contact">Contact</a></li>
+        <li class="right"><a [class.active]="isAboutActive" routerLink="/about" (click)="aboutClicked()" >About</a></li>
+    </ul>
+</nav>
+</header>
